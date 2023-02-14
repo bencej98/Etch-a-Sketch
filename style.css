@@ -3,3 +3,11 @@
     --grid-rows: 1;
   }
   
+
+  /* Trying out CSS variables */
+
+  .grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
