@@ -4,4 +4,8 @@ const container = document.getElementById("container");
 function createGrid (rows, columns) {
     container.style.setProperty("--grid-rows", rows);
     container.style.setProperty("--grid-cols", columns);
+    for (let i = 0; i < (rows * columns); i++) {
+        let cell = document.createElement("div");
+    }
 }
+
