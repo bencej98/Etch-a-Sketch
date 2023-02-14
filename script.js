@@ -6,6 +6,7 @@ function createGrid (rows, columns) {
     container.style.setProperty("--grid-cols", columns);
     for (let i = 0; i < (rows * columns); i++) {
         let cell = document.createElement("div");
+        cell.innerText = (c + 1);
     }
 }
 
