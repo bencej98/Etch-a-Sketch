@@ -11,7 +11,7 @@ function createGrid (rows, columns) {
     }
 }
 
-createGrid(8, 8)
+//createGrid(8, 8)
 
 /*
 const slider = document.getElementById("slider");
@@ -21,3 +21,10 @@ slider.oninput = function () {
     console.log(currentValue);
 }
  ̇*/
+
+ document.getElementById("form").onsubmit = function () {
+    const quantity = document.getElementById("quantity").value;
+    console.log(document.getElementById("quantity").value);
+    createGrid(quantity, quantity);
+
+ }
