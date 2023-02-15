@@ -7,16 +7,20 @@
 padding: 1em;
 border: 1px solid rgb(14, 13, 13);
 text-align: center;
+overflow: auto;
+padding: 0;
+
+
 }
 
 /* Trying out CSS variables */
 #container {
     display: grid;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), auto);
+    grid-template-columns: repeat(var(--grid-cols), auto);
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+
     }
 
-    .flex {
-        width: 500px;
-        height: 500px;
-    }
