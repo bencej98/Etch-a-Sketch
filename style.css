@@ -5,14 +5,18 @@
   
 .grid-item {
 padding: 1em;
-border: 1px solid #ddd;
+border: 1px solid rgb(14, 13, 13);
 text-align: center;
 }
 
 /* Trying out CSS variables */
 #container {
     display: grid;
-    grid-gap: 1em;
     grid-template-rows: repeat(var(--grid-rows), 1fr);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    }
+
+    .flex {
+        width: 500px;
+        height: 500px;
     }
