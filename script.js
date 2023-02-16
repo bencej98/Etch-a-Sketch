@@ -8,6 +8,20 @@ function createGrid (rows, columns) {
         let cell = document.createElement("div");
         container.appendChild(cell).className = "grid-item";
     }
+    gridPainter();
+}
+
+function gridPainter () {
+    /*
+    let childElements = document.getElementById("container").childNodes;
+    childElements.addEventListener
+    */
+    const blocks = Array.from(document.querySelectorAll(".grid-item"));
+    blocks.forEach((block) => {
+        block.addEventListener("mousedown", (e) => {
+            e.target.style.backgroundColor = "white";
+        });
+    });
 }
 
 // This method created a custom grid based on the slider input
@@ -21,11 +35,3 @@ slider.oninput = function () {
 }
 
 
- /*
- document.getElementById("form").onsubmit = function () {
-    const quantity = document.getElementById("quantity").value;
-    console.log(document.getElementById("quantity").value);
-    createGrid(quantity, quantity);
-
- }
- */
