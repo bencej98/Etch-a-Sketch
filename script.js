@@ -8,12 +8,12 @@ function createGrid (rows, columns) {
         let cell = document.createElement("div");
         container.appendChild(cell).className = "grid-item";
     }
-    gridPainter();
+    paintGrid();
 }
 
 
 // This function repaints the current block that is clicked
-function gridPainter () {
+function paintGrid () {
     
     const containerDiv = document.getElementById("container");
 
@@ -25,12 +25,15 @@ function gridPainter () {
             });
     });
     */
-
+    const currentColor = document.getElementsByClassName("colorPicker")[0].value;
+    const colorPicker = document.querySelector(".colorPicker");
+    console.log(currentColor);
     
     const blocks = Array.from(document.querySelectorAll(".grid-item"));
+
     blocks.forEach((block) => {
         block.addEventListener("mouseover", (e) => {
-            e.target.style.backgroundColor = "white";
+            e.target.style.backgroundColor = returnColor();
         });
     
     
@@ -57,3 +60,14 @@ slider.oninput = function () {
 }
 
 
+// Returns the current chosen color from color picker
+function returnColor () {
+
+    const colorPicker = document.querySelector(".colorPicker");
+    let currentColor = document.getElementsByClassName("colorPicker")[0].value;
+    colorPicker.addEventListener("input", () => {
+        currentColor = document.getElementsByClassName("colorPicker")[0].value;
+        return currentColor;
+    });
+    return currentColor;
+}
