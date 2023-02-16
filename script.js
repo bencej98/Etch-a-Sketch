@@ -11,16 +11,37 @@ function createGrid (rows, columns) {
     gridPainter();
 }
 
+
+// This function repaints the current block that is clicked
 function gridPainter () {
+    
+    const containerDiv = document.getElementById("container");
+
     /*
-    let childElements = document.getElementById("container").childNodes;
-    childElements.addEventListener
+    containerDiv.addEventListener("mousedown", () => {
+        blocks.forEach((block) => {
+            block.addEventListener("mouseover", (e) => {
+                e.target.style.backgroundColor = "white";
+            });
+    });
     */
+
+    
     const blocks = Array.from(document.querySelectorAll(".grid-item"));
     blocks.forEach((block) => {
-        block.addEventListener("mousedown", (e) => {
+        block.addEventListener("mouseover", (e) => {
             e.target.style.backgroundColor = "white";
         });
+    
+    
+    /*
+    const blocks = document.getElementById("container");
+    console.log(blocks)
+;    blocks.addEventListener("mousedown", (e) => {
+        console.log(e.target.children);
+        //e.target.children.style.backgroundColor = "white";
+    */
+
     });
 }
 
@@ -32,6 +53,7 @@ slider.oninput = function () {
     container.replaceChildren();
     createGrid(currentValue, currentValue);
     console.log(currentValue);
+    //gridPainter();
 }
 
 
