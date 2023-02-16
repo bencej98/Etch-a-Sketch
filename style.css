@@ -9,18 +9,17 @@ border: 1px solid rgb(14, 13, 13);
 text-align: center;
 overflow: auto;
 padding: 0;
+background-color: white;
 
 
 }
 
-/* Trying out CSS variables */
+/* Trying out CSS variables, auto is needed for grid items not to overflow*/
 #container {
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), auto);
     grid-template-columns: repeat(var(--grid-cols), auto);
     width: 400px;
     height: 400px;
-    background-color: blue;
-
     }
 
