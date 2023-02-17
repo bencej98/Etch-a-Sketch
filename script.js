@@ -2,6 +2,7 @@ const container = document.getElementById("container");
 const resetButton = document.querySelector(".resetButton");
 const blackButton = document.querySelector(".blackButton");
 const rainbowButton = document.querySelector(".randomButton");
+const eraserButton = document.querySelector(".eraserButton");
 
 // This function creates a grid
 function createGrid (rows, columns) {
