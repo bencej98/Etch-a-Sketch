@@ -1,5 +1,6 @@
 const container = document.getElementById("container");
 const resetButton = document.querySelector(".resetButton");
+const blackButton = document.querySelector(".blackButton");
 
 // This function creates a grid
 function createGrid (rows, columns) {
