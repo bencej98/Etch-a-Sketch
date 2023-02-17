@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+const resetButton = document.querySelector(".resetButton");
 
 // This function creates a grid
 function createGrid (rows, columns) {
@@ -50,4 +51,14 @@ function returnColor () {
     return currentColor;
 }
 
+function resetGrid () {
+    const blocks = Array.from(document.querySelectorAll(".grid-item"));
+    blocks.forEach((block) => {
+        block.style.backgroundColor = "white";
+        console.log(block);
+    });
+}
+
+
 createGrid(currentValue, currentValue);
+resetGrid();
