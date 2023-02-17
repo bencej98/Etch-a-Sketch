@@ -55,10 +55,9 @@ function resetGrid () {
     const blocks = Array.from(document.querySelectorAll(".grid-item"));
     blocks.forEach((block) => {
         block.style.backgroundColor = "white";
-        console.log(block);
     });
 }
 
+resetButton.addEventListener("click", resetGrid);
 
 createGrid(currentValue, currentValue);
-resetGrid();
