@@ -1,7 +1,7 @@
 const container = document.getElementById("container");
 const resetButton = document.querySelector(".resetButton");
 const blackButton = document.querySelector(".blackButton");
-const randomButton = document.querySelector(".randomButton");
+const rainbowButton = document.querySelector(".randomButton");
 
 // This function creates a grid
 function createGrid (rows, columns) {
@@ -31,6 +31,14 @@ function paintGrid () {
         blocks.forEach((block) => {
             block.addEventListener("mouseover", (e) => {
                 e.target.style.backgroundColor = "black";
+            });
+        });
+    });
+
+    rainbowButton.addEventListener("click", () => {
+        blocks.forEach((block) => {
+            block.addEventListener("mouseover", (e) => {
+                e.target.style.backgroundColor = getRandomColor();
             });
         });
     });
