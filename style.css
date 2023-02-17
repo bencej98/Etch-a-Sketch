@@ -46,3 +46,8 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+button:hover {
+  background-color: #333;
+  color:white;
+}
