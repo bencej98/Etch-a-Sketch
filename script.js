@@ -1,8 +1,9 @@
+const colorPicker = document.querySelector(".colorPicker");
 const container = document.getElementById("container");
 const resetButton = document.querySelector(".resetButton");
 const blackButton = document.querySelector(".blackButton");
 const rainbowButton = document.querySelector(".randomButton");
-const eraserButton = document.querySelector(".eraserButton");
+const eraserButton = document.querySelector(".eraser-button");
 
 // This function creates a grid
 function createGrid (rows, columns) {
@@ -21,11 +22,14 @@ function createGrid (rows, columns) {
 function paintGrid () {
     
     const blocks = Array.from(document.querySelectorAll(".grid-item"));
-    blocks.forEach((block) => {
-        block.addEventListener("mouseover", (e) => {
-            e.target.style.backgroundColor = returnColor();
+    colorPicker.addEventListener("click", () => {
+        blocks.forEach((block) => {
+            block.addEventListener("mouseover", (e) => {
+                e.target.style.backgroundColor = returnColor();
+            });
         });
     });
+
 
     // This method paints the blocks black upon click on the "Black" button
     blackButton.addEventListener("click", () => {
@@ -43,7 +47,16 @@ function paintGrid () {
             });
         });
     });
+
+    eraserButton.addEventListener("click", () => {
+        blocks.forEach((block) => {
+            block.addEventListener("mouseover", (e) => {
+                e.target.style.backgroundColor = "white";
+            });
+        });
+    });
 }
+
 
 // This method created a custom grid based on the slider input
 const slider = document.getElementById("slider");
@@ -61,7 +74,6 @@ slider.oninput = function () {
 // Returns the current chosen color from color picker
 function returnColor () {
 
-    const colorPicker = document.querySelector(".colorPicker");
     // This method below returns an array thus I should index the first and only element
     let currentColor = document.getElementsByClassName("colorPicker")[0].value;
     colorPicker.addEventListener("input", () => {
@@ -89,3 +101,4 @@ function getRandomColor() {
 
 resetButton.addEventListener("click", resetGrid);
 createGrid(currentValue, currentValue);
+returnColor();
