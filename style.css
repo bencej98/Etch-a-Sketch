@@ -34,9 +34,15 @@ background-color: white;
 .left-flex {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 body {
   background-color: #ededed;
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
