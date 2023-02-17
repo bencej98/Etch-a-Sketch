@@ -21,7 +21,10 @@ function createGrid (rows, columns) {
 // This function repaints the current block that is clicked
 function paintGrid () {
     
+
     const blocks = Array.from(document.querySelectorAll(".grid-item"));
+
+    // This method paints the block based on the color picked from color picker
     colorPicker.addEventListener("click", () => {
         blocks.forEach((block) => {
             block.addEventListener("mouseover", (e) => {
@@ -29,7 +32,6 @@ function paintGrid () {
             });
         });
     });
-
 
     // This method paints the blocks black upon click on the "Black" button
     blackButton.addEventListener("click", () => {
@@ -40,6 +42,7 @@ function paintGrid () {
         });
     });
 
+    // This method paints the blocks with random colors upon click on the "Rainbow" button
     rainbowButton.addEventListener("click", () => {
         blocks.forEach((block) => {
             block.addEventListener("mouseover", (e) => {
@@ -48,6 +51,7 @@ function paintGrid () {
         });
     });
 
+    // This method paints the blocks with white color upon click on the "Eraser" button
     eraserButton.addEventListener("click", () => {
         blocks.forEach((block) => {
             block.addEventListener("mouseover", (e) => {
@@ -83,6 +87,7 @@ function returnColor () {
     return currentColor;
 }
 
+// This function resets all drawings from the grid
 function resetGrid () {
     const blocks = Array.from(document.querySelectorAll(".grid-item"));
     blocks.forEach((block) => {
@@ -90,6 +95,7 @@ function resetGrid () {
     });
 }
 
+// This function generates a random color with a hex value
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
