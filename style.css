@@ -28,10 +28,15 @@ background-color: white;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .left-flex {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+body {
+  background-color: #ededed;
 }
