@@ -39,6 +39,8 @@ background-color: white;
 
 body {
   background-color: #ededed;
+  color: #333;
+  font-family: "Roboto", sans-serif;
 }
 
 .color-container {
@@ -59,10 +61,17 @@ button:hover {
 
 p3 {
   font-size: 50px;
+  font-weight: bold;
 }
 
 .header-flex {
   display: flex;
   justify-content: center;
   align-items: center;  
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
