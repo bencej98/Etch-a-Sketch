@@ -47,6 +47,11 @@ body {
   align-items: center;
 }
 
+button {
+  border-radius: 5px;
+  padding: 10px 15px;
+  border: 1px solid;
+}
 button:hover {
   background-color: #333;
   color:white;
