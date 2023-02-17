@@ -24,6 +24,8 @@ function paintGrid () {
             e.target.style.backgroundColor = returnColor();
         });
     });
+
+    // This method paints the blocks black upon click on the "Black" button
     blackButton.addEventListener("click", () => {
         blocks.forEach((block) => {
             block.addEventListener("mouseover", (e) => {
@@ -65,6 +67,15 @@ function resetGrid () {
         block.style.backgroundColor = "white";
     });
 }
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 
 resetButton.addEventListener("click", resetGrid);
 createGrid(currentValue, currentValue);
