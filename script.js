@@ -24,6 +24,13 @@ function paintGrid () {
             e.target.style.backgroundColor = returnColor();
         });
     });
+    blackButton.addEventListener("click", () => {
+        blocks.forEach((block) => {
+            block.addEventListener("mouseover", (e) => {
+                e.target.style.backgroundColor = "black";
+            });
+        });
+    });
 }
 
 // This method created a custom grid based on the slider input
@@ -60,5 +67,4 @@ function resetGrid () {
 }
 
 resetButton.addEventListener("click", resetGrid);
-
 createGrid(currentValue, currentValue);
