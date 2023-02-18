@@ -5,7 +5,7 @@
   
 .grid-item {
 padding: 1em;
-border: 1px solid #0e0d0d;
+border: 1px solid #818080;
 text-align: center;
 overflow: auto;
 padding: 0;
@@ -64,12 +64,20 @@ button:hover {
   color:white;
 }
 
-p3 {
+h3 {
   font-size: 50px;
   font-weight: bold;
+  margin: 0;
 }
 
-.header-flex {
+h5 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.header-flex, .description-flex {
   display: flex;
   justify-content: center;
   align-items: center;  
