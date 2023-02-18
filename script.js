@@ -1,4 +1,4 @@
-const colorPicker = document.querySelector(".colorPicker");
+const colorPicker = document.querySelector(".color-picker");
 const container = document.getElementById("container");
 const resetButton = document.querySelector(".reset-button");
 const blackButton = document.querySelector(".black-button");
