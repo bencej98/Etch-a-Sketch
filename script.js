@@ -4,6 +4,7 @@ const resetButton = document.querySelector(".reset-button");
 const blackButton = document.querySelector(".black-button");
 const rainbowButton = document.querySelector(".random-button");
 const eraserButton = document.querySelector(".eraser-button");
+const sliderValueDisplay= document.querySelector("p");
 
 // This function creates a grid
 function createGrid (rows, columns) {
@@ -72,6 +73,7 @@ slider.oninput = function () {
     // Deletes all children of the parent node
     container.replaceChildren();
     createGrid(currentValue, currentValue);
+    sliderValueDisplay.textContent = currentValue + "x" + currentValue;
 }
 
 
