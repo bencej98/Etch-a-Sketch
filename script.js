@@ -22,7 +22,6 @@ function createGrid (rows, columns) {
 // This function repaints the current block that is clicked
 function paintGrid () {
     
-
     const blocks = Array.from(document.querySelectorAll(".grid-item"));
 
     // This method paints the block based on the color picked from color picker
@@ -82,9 +81,9 @@ slider.oninput = function () {
 function returnColor () {
 
     // This method below returns an array thus I should index the first and only element
-    let currentColor = document.getElementsByClassName("colorPicker")[0].value;
+    let currentColor = document.getElementsByClassName("color-picker")[0].value;
     colorPicker.addEventListener("input", () => {
-        currentColor = document.getElementsByClassName("colorPicker")[0].value;
+        currentColor = document.getElementsByClassName("color-picker")[0].value;
         return currentColor;
     });
     return currentColor;
