@@ -1,8 +1,8 @@
 const colorPicker = document.querySelector(".colorPicker");
 const container = document.getElementById("container");
-const resetButton = document.querySelector(".resetButton");
-const blackButton = document.querySelector(".blackButton");
-const rainbowButton = document.querySelector(".randomButton");
+const resetButton = document.querySelector(".reset-button");
+const blackButton = document.querySelector(".black-button");
+const rainbowButton = document.querySelector(".random-button");
 const eraserButton = document.querySelector(".eraser-button");
 
 // This function creates a grid
