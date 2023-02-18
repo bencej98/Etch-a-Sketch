@@ -77,10 +77,12 @@ h5 {
   text-align: center;
 }
 
+/* Minus margin is needed to overwrite flex gap for these two elements */
 .header-flex, .description-flex {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  margin-bottom: -40px;
 }
 
 .flex {
