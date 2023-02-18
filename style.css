@@ -59,9 +59,10 @@ button:hover {
   color:white;
 }
 
-button:focus {
+.black-button:focus, .eraser-button:focus, .random-button:focus {
   background-color: #333;
-  color:white;}
+  color:white;
+}
 
 p3 {
   font-size: 50px;
