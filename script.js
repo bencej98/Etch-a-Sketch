@@ -65,8 +65,9 @@ function paintGrid () {
 
 // This method created a custom grid based on the slider input
 const slider = document.getElementById("slider");
-// Base size of the grid
-let currentValue = 16;
+// Initial size of the grid
+let currentValue = slider.value;
+sliderValueDisplay.textContent = slider.value + "x" + slider.value;
 slider.oninput = function () {
 
     currentValue = slider.value;
