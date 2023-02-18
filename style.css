@@ -59,6 +59,10 @@ button:hover {
   color:white;
 }
 
+button:focus {
+  background-color: #333;
+  color:white;}
+
 p3 {
   font-size: 50px;
   font-weight: bold;
@@ -75,3 +79,4 @@ p3 {
   flex-direction: column;
   gap: 50px;
 }
+
