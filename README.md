@@ -6,7 +6,7 @@ This project was created as part of The Odin Project course. I have built the pr
 
 The aim of this project is to have fun with the game and draw anything you like.
 
-The game is hosted with github pages and you can visit is via this link: https://bencej98.github.io/Etch-a-Sketch/
+The game is hosted with github pages and you can visit it via this link: https://bencej98.github.io/Etch-a-Sketch/
 
 ## Structure:
 
@@ -53,7 +53,7 @@ Other than that I created the style and structure of it using HTML and CSS.
 
 ## Future Development:
 
-I am planning to add a button to the page where you can toggle the block border and draw to a completely white board if you choose to.
+I am planning to add a button to the page which you can toggle the block border with and draw to a completely white board if you choose to.
 
 ## Struggles/Summary:
 
