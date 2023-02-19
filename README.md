@@ -50,3 +50,13 @@ Clicking this button will set the current mode to eraser which you can use to cl
 For the creation if this game I used vanilla JavaScript to learn every bit of the language before using any framework.
 
 Other than that I created the style and structure of it using HTML and CSS.
+
+## Future Development:
+
+I am planning to add a button to the page where you can toggle the block border and draw to a completely white board if you choose to.
+
+## Struggles/Summary:
+
+As this is my second project using Vanilla JavaScript, HTML and CSS some of the concepts were easier to use but I have encountered CSS variables which I had to learn. Also there is a fairly good amount of DOM manipulation in the project and this concept needed some research.\
+\
+Creating this game was the perfect opportunity for me to learn even more about JavaScript.
